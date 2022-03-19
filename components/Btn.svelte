@@ -46,10 +46,11 @@
     </a>
   {:else}
     <button
+      on:click
+      {...$$restProps}
       class={computedClasses}
       title={computedLabel}
       aria-label={computedLabel}
-      on:click|passive
     >
       <Icon {glyph} {direction} />
       {#if text !== ""}

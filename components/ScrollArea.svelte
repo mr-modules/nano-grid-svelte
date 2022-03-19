@@ -24,7 +24,7 @@
 </script>
 
 <template>
-  <div on:scroll|passive class={computedClasses}>
+  <div on:scroll {...$$restProps} class={computedClasses}>
     <slot />
   </div>
 </template>
